@@ -4,7 +4,6 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -30,8 +29,9 @@
 
 int main() {
 
- char estado1, codigo1 [3], cidade1[20] ;
-
+ char estado1[25];
+ char codigo1 [4];
+ char cidade1[20];
  int pop1;
  float area1;
  float pib1;
@@ -47,13 +47,13 @@ int main() {
  printf("Carta 1:\n");
 
  printf("Qual estado da sua carta? ");
-scanf("%s", &estado1);
+scanf("%19s", estado1);
 
 printf("Qual o codigo dela? ");
-scanf("%s",&codigo1);
+scanf("%4s",codigo1);
 
 printf("Qual a cidade? ");
-scanf("%s", &cidade1);
+scanf("%19s", cidade1);
 
 printf("Qual população da cidade? ");
 scanf("%d", &pop1);
@@ -73,7 +73,7 @@ printf("Codigo: %s \n",codigo1);
 printf("Cidade: %s \n",cidade1);
 printf("População: %d \n",pop1);
 printf("Área: %.2f Km²\n",area1);
-printf("PIB: %f bilhões de reais\n",pib1);
+printf("PIB: %.2f bilhões de reais\n",pib1);
 printf("Pontos turísticos: %d \n",pontos1);
 
 
