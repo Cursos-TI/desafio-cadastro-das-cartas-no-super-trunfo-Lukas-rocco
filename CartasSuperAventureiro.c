@@ -47,7 +47,7 @@ int main(){
    
    
    float Densidade1 = (float) pop1/ area1;
-   float pibpercapita1 = (float) pib1/ pop1;
+   float pibpercapita1 = (float) pib1 * 1000000000 / pop1;
    
    printf("Carta 1:\n");
    printf("Estado: %s \n", estado1);
@@ -87,7 +87,7 @@ int main(){
    scanf("%d", &pontos2);
    
    float Densidade2 = (float) pop2/ area2;
-   float pibpercapita2 =(float) pib2/ pop2;
+   float pibpercapita2 =(float) pib2* 1000000000 / pop2;
 
 
 
