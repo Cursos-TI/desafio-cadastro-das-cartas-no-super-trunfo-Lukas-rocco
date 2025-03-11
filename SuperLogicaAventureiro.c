@@ -162,10 +162,14 @@ int main(){
         printf("7. Super poder: \n");
         scanf("%d", &atributo);
     
-        if (escolhajogador == 1 && atributo == 1 && pop1 > pop2);
+        if (escolhajogador == 1 && atributo == 1 && pop1 > pop2)
         {
            printf(" %d - %d / carta 1 venceu!", pop1, pop2);
+        } else if (escolhajogador == 1 && atributo == 2 && area1 > area2);
+        {
+            printf(" %.2f - %2.f / carta 1 venceu!", area1, area2);
         }
+        
         
   
   
